@@ -1,0 +1,23 @@
+<!-- Module Build File -->
+
+<module
+  name = "pong"
+  bajaVersion = "0"
+  preferredSymbol = "p"
+  description = "Pong game as Workbench tool"
+  vendor = "github.tblong"
+  edition = "j2se-5.0"
+  vendorVersion = "3.7.1"
+>
+
+  <!-- Dependencies -->
+  <dependency name="baja" vendor="Tridium" vendorVersion="3.7" />
+
+  <!-- Packages -->
+  <package name="com.github.tblong.niagarapong"/>
+
+  <!-- Resources -->
+  <resources name="license/*.*"/>
+  <resources name="doc/*.*"/>
+
+</module>
