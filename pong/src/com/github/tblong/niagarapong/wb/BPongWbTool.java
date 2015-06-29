@@ -13,6 +13,7 @@ public class BPongWbTool
    {
      properties
      {
+     
      }
      actions
      {
@@ -23,12 +24,12 @@ public class BPongWbTool
    }
    -*/
 /*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
-/*@ $com.github.tblong.niagarapong.wb.BPongWbTool(1964251435)1.0$ @*/
-/* Generated Sun Jun 28 20:45:25 EDT 2015 by Slot-o-Matic 2000 (c) Tridium, Inc. 2000 */
+/*@ $com.github.tblong.niagarapong.wb.BPongWbTool(2247919916)1.0$ @*/
+/* Generated Mon Jun 29 07:22:06 EDT 2015 by Slot-o-Matic 2000 (c) Tridium, Inc. 2000 */
 
 ////////////////////////////////////////////////////////////////
 // Type
-////////////////////////////////////////////////////////////s////
+////////////////////////////////////////////////////////////////
   
   public Type getType() { return TYPE; }
   public static final Type TYPE = Sys.loadType(BPongWbTool.class);
