@@ -1,3 +1,11 @@
 #
 # Lexicon for the pong module.
 #
+
+
+#
+# com.github.tblong.niagarapong.wb
+#
+BPongWbTool.displayName=Pong test
+BPongWbTool.icon=module://icons/x16/r2/station.png
+#BPongWbTool.icon=module://pong/com/github/tblong/niagarapong/icons/pongIcon.png

@@ -2,7 +2,5 @@
 
 <!-- Types -->
 <types>
-  <!-- Type Example:
-  <type name="MyClass" class="com.acme.BMyClass"/>
-  -->
+  <type name="PongWbTool" class="com.github.tblong.niagarapong.wb.BPongWbTool"/>
 </types>

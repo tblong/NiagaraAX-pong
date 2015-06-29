@@ -9,15 +9,17 @@
   edition = "j2se-5.0"
   vendorVersion = "3.7.1"
 >
+	<!-- Dependencies -->
+	<dependency name="baja" vendor="Tridium" vendorVersion="3.7" />
+	<dependency name="bajaui" vendor="Tridium" vendorVersion="3.7" />
+	<dependency name="workbench" vendor="Tridium" vendorVersion="3.7" />
 
-  <!-- Dependencies -->
-  <dependency name="baja" vendor="Tridium" vendorVersion="3.7" />
+	<!-- Packages -->
+	<package name="com.github.tblong.niagarapong.wb" install="ui" />
 
-  <!-- Packages -->
-  <package name="com.github.tblong.niagarapong"/>
-
-  <!-- Resources -->
-  <resources name="license/*.*"/>
-  <resources name="doc/*.*"/>
+	<!-- Resources -->
+	<resources name="license/*.*" install="runtime" />
+	<resources name="doc/*.*" install="doc"/>
+	<resources name="com/github/tblong/niagarapong/icons/*.*" install="ui"/>
 
 </module>
