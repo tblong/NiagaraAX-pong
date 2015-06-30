@@ -1,6 +1,10 @@
 <!-- Module Include File -->
-
 <!-- Types -->
 <types>
   <type name="PongWbTool" class="com.github.tblong.niagarapong.wb.BPongWbTool"/>
+  <type name="PongWbView" class="com.github.tblong.niagarapong.wb.BPongWbView">
+  	<agent>
+  		<on type="pong:PongWbTool"/>
+  	</agent>
+  </type>
 </types>

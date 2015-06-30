@@ -8,3 +8,5 @@
 #
 PongWbTool.displayName=Pong
 PongWbTool.icon=module://pong/com/github/tblong/niagarapong/icons/pongIcon.png
+PongWbView.displayName=Pong View
+PongWbView.icon=module://pong/com/github/tblong/niagarapong/icons/pongIcon.png
