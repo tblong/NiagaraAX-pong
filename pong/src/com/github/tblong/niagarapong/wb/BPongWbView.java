@@ -1,11 +1,19 @@
 package com.github.tblong.niagarapong.wb;
 
+import javax.baja.gx.BFont;
 import javax.baja.sys.BObject;
 import javax.baja.sys.Context;
 import javax.baja.sys.Sys;
 import javax.baja.sys.Type;
+import javax.baja.ui.BBorder;
+import javax.baja.ui.BLabel;
+import javax.baja.ui.BWidget;
+import javax.baja.ui.pane.BBorderPane;
+import javax.baja.ui.pane.BEdgePane;
 import javax.baja.util.Lexicon;
 import javax.baja.workbench.view.BWbView;
+
+import com.tridium.workbench.fieldeditors.BFontFE;
 
 public class BPongWbView
     extends BWbView
@@ -79,7 +87,14 @@ public class BPongWbView
   {
     // TODO build widget tree
 
-    super.doLoadValue(value, context);
+    BWidget topWidget = new BLabel("Top Widget", BFont.make("tahoma", 20));
+    BWidget centerWidget = new BLabel("Center Widget", BFont.make("tahoma", 20));
+    BWidget mainEdge =
+        new BEdgePane(new BBorderPane(topWidget, BBorder.groove), null, null, null,
+                      new BBorderPane(centerWidget, BBorder.groove));
+    BWidget mainContent = new BBorderPane(mainEdge);
+    // set content
+    setContent(mainContent);
   }
   
 ////////////////////////////////////////////////////////////////
