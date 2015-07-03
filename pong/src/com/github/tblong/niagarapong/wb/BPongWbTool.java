@@ -5,6 +5,14 @@ import javax.baja.sys.Sys;
 import javax.baja.sys.Type;
 import javax.baja.workbench.tool.BWbNavNodeTool;
 
+/**
+ * Plugin workbench tool for Pong game.
+ *
+ * @author TBLong
+ * @creation Jun 28, 2015
+ * @version Jul 2, 2015
+ *
+ */ 
 public class BPongWbTool
     extends BWbNavNodeTool
 {
