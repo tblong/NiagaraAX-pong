@@ -17,6 +17,8 @@
 
 	<!-- Packages -->
 	<package name="com.github.tblong.niagarapong.wb" install="ui" />
+	<package name="com.github.tblong.niagarapong.enums" install="runtime" />
+
 
 	<!-- Resources -->
 	<resources name="license/*.*" install="runtime" />
