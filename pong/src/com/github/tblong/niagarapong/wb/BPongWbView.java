@@ -1,12 +1,29 @@
 package com.github.tblong.niagarapong.wb;
 
+import javax.baja.gx.BFont;
+import javax.baja.sys.BAbsTime;
 import javax.baja.sys.BObject;
 import javax.baja.sys.Context;
 import javax.baja.sys.Sys;
 import javax.baja.sys.Type;
+import javax.baja.ui.BBorder;
+import javax.baja.ui.BLabel;
+import javax.baja.ui.BWidget;
+import javax.baja.ui.pane.BBorderPane;
+import javax.baja.ui.pane.BEdgePane;
 import javax.baja.util.Lexicon;
 import javax.baja.workbench.view.BWbView;
 
+import com.tridium.workbench.fieldeditors.BFontFE;
+
+/**
+ * Workbench view for Pong game.
+ *
+ * @author TBLong
+ * @creation Jun 30, 2015
+ * @version Jul 2, 2015
+ *
+ */ 
 public class BPongWbView
     extends BWbView
 {
@@ -41,8 +58,7 @@ public class BPongWbView
 // Attributes
 ////////////////////////////////////////////////////////////////
   
-
-
+  private final BPongUserOptions options;
   
   
 ////////////////////////////////////////////////////////////////
@@ -52,7 +68,9 @@ public class BPongWbView
   public BPongWbView()
   {
     // TODO constructor
-    
+    // user options
+    this.options = BPongUserOptions.make();
+
   }
   
   
@@ -78,8 +96,21 @@ public class BPongWbView
   protected void doLoadValue(BObject value, Context context) throws Exception
   {
     // TODO build widget tree
+    
+    // update last opened options
+    BAbsTime lastOpened = this.options.getLastOpened();
+    this.options.setLastOpened(BAbsTime.now());
+    this.options.save();
+    
 
-    super.doLoadValue(value, context);
+    BWidget topWidget = new BLabel("Top Widget", BFont.make("BankGothic Lt BT", 20));
+    BWidget centerWidget = new BLabel("Center Widget", BFont.make("Tahoma", 20));
+    BWidget mainEdge =
+        new BEdgePane(new BBorderPane(topWidget, BBorder.groove), null, null, null,
+                      new BBorderPane(centerWidget, BBorder.groove));
+    BWidget mainContent = new BBorderPane(mainEdge);
+    // set content
+    setContent(mainContent);
   }
   
 ////////////////////////////////////////////////////////////////

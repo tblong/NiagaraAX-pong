@@ -12,6 +12,7 @@
 	<!-- Dependencies -->
 	<dependency name="baja" vendor="Tridium" vendorVersion="3.7" />
 	<dependency name="bajaui" vendor="Tridium" vendorVersion="3.7" />
+	<dependency name="gx" vendor="Tridium" vendorVersion="3.7" />
 	<dependency name="workbench" vendor="Tridium" vendorVersion="3.7" />
 
 	<!-- Packages -->
@@ -19,7 +20,7 @@
 
 	<!-- Resources -->
 	<resources name="license/*.*" install="runtime" />
-	<resources name="doc/*.*" install="doc"/>
-	<resources name="com/github/tblong/niagarapong/icons/*.*" install="ui"/>
+	<resources name="doc/*.*" install="doc" />
+	<resources name="com/github/tblong/niagarapong/icons/*.*" install="ui" />
 
 </module>

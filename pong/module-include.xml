@@ -7,4 +7,5 @@
   		<on type="pong:PongWbTool"/>
   	</agent>
   </type>
+  <type name="PongUserOptions" class="com.github.tblong.niagarapong.wb.BPongUserOptions"/>
 </types>
